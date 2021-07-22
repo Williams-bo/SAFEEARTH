@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SIGN UP</title>
+    <title>SIGNUP | SAFEEARTH</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="nav flex justify-between bg-white px-72 py-6 sticky top-0 z-50">
+    <!-- sticky top-0 z-50 -->
+    <div class="nav flex justify-between bg-white px-60 py-6">
       <a href="#/"
         ><div class="logo text-gray text-2xl font-bold tracking-tighter">
           SAFEEARTH
@@ -18,22 +19,18 @@
         <a href="./index.html"
           ><li class="inline text-gray text-base ml-10 font-bold">HOME</li></a
         >
-        <a href="#/"><li class="inline text-base text-xl ml-10">ABOUT</li></a>
-        <a href="#/"
+        <a href="./about.html"
+          ><li class="inline text-base text-xl ml-10">ABOUT</li></a
+        >
+        <a href="./contact.html"
           ><li class="inline text-gray text-base ml-10">CONTACT US</li></a
         >
-        <a href="#/"><li class="inline text-gray text-base ml-10">LOGIN</li></a>
-        <a href="#/"
+        <a href="./login.html"
+          ><li class="inline text-gray text-base ml-10">DASHBOARD</li></a
+        >
+        <a href="./contact.html"
           ><li
-            class="
-              inline
-              text-gray-100 text-base
-              ml-10
-              bg-blue-700
-              py-4
-              px-6
-              font-light
-            "
+            class="inline text-gray-200 text-base ml-10 bg-blue-600 py-4 px-6"
           >
             SIGNUP
           </li></a
@@ -42,20 +39,88 @@
     </div>
 
     <div
-      class="aside flex flex-col justify-center items-center h-20v bg-gray-100"
+      class="aside flex flex-col justify-center items-center h-30v bg-gray-100"
     >
       <p class="text-black text-lg">
         ENTER YOUR DETAILS TO BE A PARTAKER OF SAFEEARTH
       </p>
+      <div class="flex">
+        <button
+          onclick="document.getElementById('estate').style.display = 'block'; document.getElementById('restaurant').style.display = 'none'; document.getElementById('unilag').style.display = 'none'; document.getElementById('unilag').style.display = 'none';"
+          class="
+            bg-blue-600
+            text-gray-100
+            hover:text-gray-200
+            text-lg
+            px-10
+            py-2
+            flex
+            mr-2
+            mx-auto
+            mb-7
+            hover:border-transparent hover:bg-blue-700
+          "
+        >
+          ESTATE
+        </button>
+        <button
+          onclick="document.getElementById('restaurant').style.display = 'block'; document.getElementById('estate').style.display = 'none'; document.getElementById('unilag').style.display = 'none';"
+          class="
+            bg-blue-600
+            text-gray-100
+            hover:text-gray-200
+            text-lg
+            px-10
+            py-2
+            flex
+            mr-2
+            mx-auto
+            mb-7
+            hover:border-transparent hover:bg-blue-700
+          "
+        >
+          RESTAURANT
+        </button>
+        <button
+          onclick="document.getElementById('unilag').style.display = 'block'; document.getElementById('estate').style.display = 'none'; document.getElementById('restaurant').style.display = 'none';"
+          class="
+            bg-blue-600
+            text-gray-100
+            hover:text-gray-200
+            text-lg
+            px-10
+            py-2
+            flex
+            mr-2
+            mx-auto
+            mb-7
+            hover:border-transparent hover:bg-blue-700
+          "
+        >
+          INDUSTRY
+        </button>
+      </div>
     </div>
 
-    <form class="main relative mt-20">
+    <form id="estate" class="main relative mt-16">
+      <p class="text-center text-3xl font-bold mb-12 tracking-tighter">
+        ESTATE
+      </p>
       <div class="flex justify-center">
-        <div class="flex flex-col mr-5">
+        <div class="flex flex-col mr-7">
           <label class="mb-3 text-xl" for="first-name">First Name</label>
           <input
             id="first-name"
-            class="h-12 w-96 mr-5 mb-5 px-5 border border-gray-600 outline-none"
+            class="
+              h-12
+              w-96
+              mr-5
+              mb-5
+              px-5
+              border border-gray-600
+              hover:border-blue-900
+              outline-none
+            "
             type="text"
             placeholder="Fnter your first name"
           />
@@ -64,18 +129,36 @@
           <label class="mb-3 text-xl" for="last-name">Last Name</label>
           <input
             id="last-name"
-            class="h-12 w-96 mr-5 mb-5 px-5 border border-gray-600 outline-none"
+            class="
+              h-12
+              w-96
+              mr-5
+              mb-5
+              px-5
+              border border-gray-600
+              hover:border-blue-900
+              outline-none
+            "
             type="text"
             placeholder="Fnter your last name"
           />
         </div>
       </div>
       <div class="flex justify-center">
-        <div class="flex flex-col mr-5">
+        <div class="flex flex-col mr-7">
           <label class="mb-3 text-xl" for="email">Email Address</label>
           <input
             id="email"
-            class="h-12 w-96 mr-5 mb-5 px-5 border border-gray-600 outline-none"
+            class="
+              h-12
+              w-96
+              mr-5
+              mb-5
+              px-5
+              border border-gray-600
+              hover:border-blue-900
+              outline-none
+            "
             type="text"
             placeholder="Fnter your email"
           />
@@ -84,18 +167,36 @@
           <label class="mb-3 text-xl" for="phone">Phone Number</label>
           <input
             id="phone"
-            class="h-12 w-96 mr-5 mb-5 px-5 border border-gray-600 outline-none"
+            class="
+              h-12
+              w-96
+              mr-5
+              mb-5
+              px-5
+              border border-gray-600
+              hover:border-blue-900
+              outline-none
+            "
             type="text"
             placeholder="Fnter your phone number"
           />
         </div>
       </div>
       <div class="flex justify-center">
-        <div class="flex flex-col mr-5">
+        <div class="flex flex-col mr-7">
           <label class="mb-3 text-xl" for="house">House Address</label>
           <input
             id="house"
-            class="h-12 w-96 mr-5 mb-5 px-5 border border-gray-600 outline-none"
+            class="
+              h-12
+              w-96
+              mr-5
+              mb-5
+              px-5
+              border border-gray-600
+              hover:border-blue-900
+              outline-none
+            "
             type="text"
             placeholder="Fnter your house address"
           />
@@ -104,18 +205,36 @@
           <label class="mb-3 text-xl" for="estate">Estate Name</label>
           <input
             id="estate"
-            class="h-12 w-96 mr-5 mb-5 px-5 border border-gray-600 outline-none"
+            class="
+              h-12
+              w-96
+              mr-5
+              mb-5
+              px-5
+              border border-gray-600
+              hover:border-blue-900
+              outline-none
+            "
             type="text"
             placeholder="Fnter your estate name"
           />
         </div>
       </div>
       <div class="flex justify-center">
-        <div class="flex flex-col mr-5">
+        <div class="flex flex-col mr-7">
           <label class="mb-3 text-xl" for="lga">LGA</label>
           <input
             id="lga"
-            class="h-12 w-96 mr-5 mb-5 px-5 border border-gray-600 outline-none"
+            class="
+              h-12
+              w-96
+              mr-5
+              mb-5
+              px-5
+              border border-gray-600
+              hover:border-blue-900
+              outline-none
+            "
             type="text"
             placeholder="Fnter your local govt area"
           />
@@ -124,14 +243,23 @@
           <label class="mb-3 text-xl" for="state">State</label>
           <input
             id="state"
-            class="h-12 w-96 mr-5 mb-5 px-5 border border-gray-600 outline-none"
+            class="
+              h-12
+              w-96
+              mr-5
+              mb-5
+              px-5
+              border border-gray-600
+              hover:border-blue-900
+              outline-none
+            "
             type="text"
             placeholder="Fnter your current state"
           />
         </div>
       </div>
 
-      <div class="flex justify-center mr-72 mt-9 pl-5">
+      <div class="flex justify-center mr-72 mt-9 pl-7">
         <img
           class="w-64 h-32 border border-gray-300"
           src="./images/character.png"
@@ -146,17 +274,365 @@
       </div>
       <button
         class="
-          bg-blue-700
-          text-gray-100
-          font-light
-          hover:text-white
-          px-12
+          bg-blue-600
+          text-gray-200
+          hover:text-gray-200
+          text-xs
+          px-10
           py-2
           flex
           mx-auto
           mt-16
           mb-7
-          hover:border-transparent hover:bg-blue-600
+          hover:border-transparent hover:bg-blue-700
+        "
+      >
+        SIGNUP
+      </button>
+    </form>
+
+    <!-- RESTAURANT -->
+    <form class="main relative mt-16 hidden" id="restaurant">
+      <p class="text-center text-3xl font-bold mb-12 tracking-tighter">
+        RESTAURANT
+      </p>
+      <div class="flex justify-center">
+        <div class="flex flex-col mr-7">
+          <label class="mb-3 text-xl" for="first-name">First Name</label>
+          <input
+            id="first-name"
+            class="
+              h-12
+              w-96
+              mr-5
+              mb-5
+              px-5
+              border border-gray-600
+              hover:border-blue-900
+              outline-none
+            "
+            type="text"
+            placeholder="Fnter your first name"
+          />
+        </div>
+        <div class="flex flex-col">
+          <label class="mb-3 text-xl" for="last-name">Last Name</label>
+          <input
+            id="last-name"
+            class="
+              h-12
+              w-96
+              mr-5
+              mb-5
+              px-5
+              border border-gray-600
+              hover:border-blue-900
+              outline-none
+            "
+            type="text"
+            placeholder="Fnter your last name"
+          />
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="flex flex-col mr-7">
+          <label class="mb-3 text-xl" for="email">Email Address</label>
+          <input
+            id="email"
+            class="
+              h-12
+              w-96
+              mr-5
+              mb-5
+              px-5
+              border border-gray-600
+              hover:border-blue-900
+              outline-none
+            "
+            type="text"
+            placeholder="Fnter your email"
+          />
+        </div>
+        <div class="flex flex-col">
+          <label class="mb-3 text-xl" for="phone">Phone Number</label>
+          <input
+            id="phone"
+            class="
+              h-12
+              w-96
+              mr-5
+              mb-5
+              px-5
+              border border-gray-600
+              hover:border-blue-900
+              outline-none
+            "
+            type="text"
+            placeholder="Fnter your phone number"
+          />
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="flex flex-col mr-7">
+          <label class="mb-3 text-xl" for="house">Shop Address</label>
+          <input
+            id="house"
+            class="
+              h-12
+              w-96
+              mr-5
+              mb-5
+              px-5
+              border border-gray-600
+              hover:border-blue-900
+              outline-none
+            "
+            type="text"
+            placeholder="Fnter your house address"
+          />
+        </div>
+        <div class="flex flex-col">
+          <label class="mb-3 text-xl" for="estate">LGA</label>
+          <input
+            id="estate"
+            class="
+              h-12
+              w-96
+              mr-5
+              mb-5
+              px-5
+              border border-gray-600
+              hover:border-blue-900
+              outline-none
+            "
+            type="text"
+            placeholder="Fnter your local govt area"
+          />
+        </div>
+      </div>
+      <div class="flex justify-center mr-96">
+        <div class="flex flex-col mr-12">
+          <label class="mb-3 text-xl" for="lga">State</label>
+          <input
+            id="lga"
+            class="
+              h-12
+              w-96
+              mr-5
+              mb-5
+              px-5
+              border border-gray-600
+              hover:border-blue-900
+              outline-none
+            "
+            type="text"
+            placeholder="Fnter your current state"
+          />
+        </div>
+      </div>
+
+      <div class="flex justify-center mr-72 mt-9 pl-7">
+        <img
+          class="w-64 h-32 border border-gray-300"
+          src="./images/character.png"
+          alt=""
+        />
+        <div class="flex flex-col ml-3">
+          <label class="mb-4 text-xl text-gray-900" for="img"
+            >Upload an image:</label
+          >
+          <input class="" type="file" id="img" name="img" accept="image/*" />
+        </div>
+      </div>
+      <button
+        class="
+          bg-blue-600
+          text-gray-200
+          hover:text-gray-200
+          text-xs
+          px-10
+          py-2
+          flex
+          mx-auto
+          mt-16
+          mb-7
+          hover:border-transparent hover:bg-blue-700
+        "
+      >
+        SIGNUP
+      </button>
+    </form>
+
+    <!-- INDUSTRY -->
+    <form class="main relative mt-16 hidden" id="unilag">
+      <p class="text-center text-3xl font-bold mb-12 tracking-tighter">
+        INDUSTRY
+      </p>
+      <div class="flex justify-center">
+        <div class="flex flex-col mr-7">
+          <label class="mb-3 text-xl" for="first-name">First Name</label>
+          <input
+            id="first-name"
+            class="
+              h-12
+              w-96
+              mr-5
+              mb-5
+              px-5
+              border border-gray-600
+              hover:border-blue-900
+              outline-none
+            "
+            type="text"
+            placeholder="Fnter your first name"
+          />
+        </div>
+        <div class="flex flex-col">
+          <label class="mb-3 text-xl" for="last-name">Last Name</label>
+          <input
+            id="last-name"
+            class="
+              h-12
+              w-96
+              mr-5
+              mb-5
+              px-5
+              border border-gray-600
+              hover:border-blue-900
+              outline-none
+            "
+            type="text"
+            placeholder="Fnter your last name"
+          />
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="flex flex-col mr-7">
+          <label class="mb-3 text-xl" for="email">Email Address</label>
+          <input
+            id="email"
+            class="
+              h-12
+              w-96
+              mr-5
+              mb-5
+              px-5
+              border border-gray-600
+              hover:border-blue-900
+              outline-none
+            "
+            type="text"
+            placeholder="Fnter your email"
+          />
+        </div>
+        <div class="flex flex-col">
+          <label class="mb-3 text-xl" for="phone">Phone Number</label>
+          <input
+            id="phone"
+            class="
+              h-12
+              w-96
+              mr-5
+              mb-5
+              px-5
+              border border-gray-600
+              hover:border-blue-900
+              outline-none
+            "
+            type="text"
+            placeholder="Fnter your phone number"
+          />
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="flex flex-col mr-7">
+          <label class="mb-3 text-xl" for="house">Industry</label>
+          <input
+            id="house"
+            class="
+              h-12
+              w-96
+              mr-5
+              mb-5
+              px-5
+              border border-gray-600
+              hover:border-blue-900
+              outline-none
+            "
+            type="text"
+            placeholder="Fnter your industry"
+          />
+        </div>
+        <div class="flex flex-col">
+          <label class="mb-3 text-xl" for="estate">Address</label>
+          <input
+            id="estate"
+            class="
+              h-12
+              w-96
+              mr-5
+              mb-5
+              px-5
+              border border-gray-600
+              hover:border-blue-900
+              outline-none
+            "
+            type="text"
+            placeholder="Fnter your industry address"
+          />
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="flex flex-col mr-7">
+          <label class="mb-3 text-xl" for="lga">LGA</label>
+          <input
+            id="lga"
+            class="
+              h-12
+              w-96
+              mr-5
+              mb-5
+              px-5
+              border border-gray-600
+              hover:border-blue-900
+              outline-none
+            "
+            type="text"
+            placeholder="Fnter your local govt area"
+          />
+        </div>
+        <div class="flex flex-col">
+          <label class="mb-3 text-xl" for="state">State</label>
+          <input
+            id="state"
+            class="
+              h-12
+              w-96
+              mr-5
+              mb-5
+              px-5
+              border border-gray-600
+              hover:border-blue-900
+              outline-none
+            "
+            type="text"
+            placeholder="Fnter your current state"
+          />
+        </div>
+      </div>
+      <button
+        class="
+          bg-blue-600
+          text-gray-200
+          hover:text-gray-200
+          text-xs
+          px-10
+          py-2
+          flex
+          mx-auto
+          mt-16
+          mb-7
+          hover:border-transparent hover:bg-blue-700
         "
       >
         SIGNUP

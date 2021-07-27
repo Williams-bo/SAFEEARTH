@@ -671,6 +671,10 @@ video {
   margin-top: 2.25rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-14 {
   margin-top: 3.5rem;
 }
@@ -1049,11 +1053,6 @@ video {
 .px-60 {
   padding-left: 15rem;
   padding-right: 15rem;
-}
-
-.px-72 {
-  padding-left: 18rem;
-  padding-right: 18rem;
 }
 
 .py-1 {
